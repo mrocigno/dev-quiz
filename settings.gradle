@@ -1,2 +1,6 @@
 rootProject.name='DevQuiz'
 include ':app'
+include ':quiz'
+include ':quiz:quizui'
+include ':quiz:quizviewmodel'
+include ':quiz:tutorialengine'
