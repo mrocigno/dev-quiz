@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/container"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    android:background="@android:color/white"
-    app:layout_constraintTop_toTopOf="parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueDark">
+
+    <br.com.devquiz.View.CanvasView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <br.com.devquiz.View.SafeAreaView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
+            android:id="@+id/teste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Teste"
-            android:layout_marginTop="60dp"
-            android:id="@+id/btnId"/>
-
-        <TextView
-            android:id="@+id/tutored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Teste"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="20dp"/>
-        <TextView
-            android:id="@+id/tutorede"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Teste"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="600dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/test_card"/>
+            android:text="AAA"/>
 
     </br.com.devquiz.View.SafeAreaView>
 

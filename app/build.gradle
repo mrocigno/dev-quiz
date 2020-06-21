@@ -3,56 +3,17 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion versions.targetVersion
-    buildToolsVersion versions.buildTools
 
     defaultConfig {
         applicationId "br.com.devquiz"
-        minSdkVersion versions.minSdkVersion
-        targetSdkVersion versions.targetVersion
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlinVersion}"
-    implementation "androidx.appcompat:appcompat:${versions.appCompat}"
-    implementation "androidx.core:core-ktx:${versions.coreKtx}"
-    implementation "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}"
+    testImplementation project(":test")
 
-    testImplementation "junit:junit:${versions.junit}"
-
-    androidTestImplementation "androidx.test.ext:junit:${versions.junitExt}"
-    androidTestImplementation "androidx.test.espresso:espresso-core:${versions.espressoCore}"
-
-    implementation "org.koin:koin-core:${versions.koin}"
-    implementation "org.koin:koin-androidx-scope:${versions.koin}"
-    implementation "org.koin:koin-androidx-viewmodel:${versions.koin}"
-    implementation "org.koin:koin-androidx-fragment:${versions.koin}"
-    implementation "org.koin:koin-androidx-ext:${versions.koin}"
-
+    implementation project(":commons")
     implementation project(":quiz:quizui")
-    implementation project(":quiz:tutorialengine")
+
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }

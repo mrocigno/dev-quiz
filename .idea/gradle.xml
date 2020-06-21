@@ -11,10 +11,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/commons" />
             <option value="$PROJECT_DIR$/quiz" />
             <option value="$PROJECT_DIR$/quiz/quizui" />
             <option value="$PROJECT_DIR$/quiz/quizviewmodel" />
-            <option value="$PROJECT_DIR$/quiz/tutorialengine" />
+            <option value="$PROJECT_DIR$/test" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

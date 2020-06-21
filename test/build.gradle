@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    api "junit:junit:${versions.junit}"
+    api "androidx.test.ext:junit:${versions.junitExt}"
+    api "androidx.test.espresso:espresso-core:${versions.espressoCore}"
+}

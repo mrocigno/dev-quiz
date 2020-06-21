@@ -1,2 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.devquiz.quizviewmodel" />
+    package="br.com.devquiz.quizviewmodel">
+
+    <application>
+        <provider
+            android:authorities="${applicationId}.quizviewmodel"
+            android:name=".ViewModelInitialization"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+</manifest>

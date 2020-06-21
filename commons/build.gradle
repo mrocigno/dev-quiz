@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlinVersion}"
+    api "androidx.appcompat:appcompat:${versions.appCompat}"
+    api "androidx.core:core-ktx:${versions.coreKtx}"
+    api "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}"
+
+    api "org.koin:koin-core:${versions.koin}"
+    api "org.koin:koin-androidx-scope:${versions.koin}"
+    api "org.koin:koin-androidx-viewmodel:${versions.koin}"
+    api "org.koin:koin-androidx-fragment:${versions.koin}"
+    api "org.koin:koin-androidx-ext:${versions.koin}"
+}
