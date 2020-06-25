@@ -3,7 +3,7 @@
     package="br.com.devquiz.quizui">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package br.com.devquiz.View
+package br.com.devquiz.layout
 
 import android.content.Context
 import android.util.AttributeSet

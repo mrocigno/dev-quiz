@@ -1,4 +1,4 @@
-package br.com.devquiz.View
+package br.com.devquiz.layout
 
 import android.content.Context
 import android.graphics.Canvas
@@ -6,18 +6,15 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.util.Log
-import android.view.View
-import androidx.core.graphics.alpha
-import java.lang.Exception
+import android.widget.FrameLayout
 import kotlin.concurrent.timer
-import kotlin.math.log
 import kotlin.random.Random
 
-class CanvasView @JvmOverloads constructor(
+class StarsBackground @JvmOverloads constructor(
     context: Context,
     attributeSet: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : View(context, attributeSet, defStyleAttr) {
+) : FrameLayout(context, attributeSet, defStyleAttr) {
 
     private val low = Paint().apply {
         color = Color.argb(150,255, 255, 255)
@@ -49,17 +46,19 @@ class CanvasView @JvmOverloads constructor(
                 if (fps++ % 5 == 0) {
                     stars.removeIf { it.x < 0 }
                     val rand = random.nextInt(3,8).toFloat()
-                    stars.add(Star(
-                        size = rand,
-                        x = width,
-                        y = random.nextInt(height.toInt()).toFloat(),
-                        speed = rand,
-                        paint = when {
-                            rand.toInt() in (3..4) -> low
-                            rand.toInt() in (5..6) -> medium
-                            else -> high
-                        }
-                    ))
+                    stars.add(
+                        Star(
+                            size = rand,
+                            x = width,
+                            y = random.nextInt(height.toInt()).toFloat(),
+                            speed = rand,
+                            paint = when {
+                                rand.toInt() in (3..4) -> low
+                                rand.toInt() in (5..6) -> medium
+                                else -> high
+                            }
+                        )
+                    )
                 }
 
                 stars.forEach {

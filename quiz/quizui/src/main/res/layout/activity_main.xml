@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.devquiz.layout.StarsBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueDark">
+
+    <br.com.devquiz.layout.SafeAreaView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        
+
+    </br.com.devquiz.layout.SafeAreaView>
+
+</br.com.devquiz.layout.StarsBackground>
