@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <br.com.devquiz.layout.StarsBackground xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        
+        <fragment
+            android:id="@+id/teste"
+            android:tag="aaa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="br.com.devquiz.quizui.QuestionFragment"
+            tools:layout="@layout/fragment_question"/>
 
     </br.com.devquiz.layout.SafeAreaView>
 

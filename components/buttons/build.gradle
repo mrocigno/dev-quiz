@@ -4,7 +4,5 @@ apply plugin: 'kotlin-android-extensions'
 
 dependencies {
     implementation project(":commons")
-    implementation project(":quiz:quizviewmodel")
-    implementation project(":components:layout")
-    implementation project(":components:buttons")
+    implementation "androidx.cardview:cardview:1.0.0"
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guide_a"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:text="Perguntaasd asd  top mais top que sei la o que, to mesmo"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_a"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent=".5"
+        android:orientation="horizontal"/>
+
+    <br.com.devquiz.buttons.QuestionResponseButton
+        app:layout_constraintTop_toTopOf="@id/guide_a"
+        app:layout_constraintBottom_toBottomOf="@id/guide_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_b"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent=".625"
+        android:orientation="horizontal"/>
+
+    <br.com.devquiz.buttons.QuestionResponseButton
+        app:layout_constraintTop_toTopOf="@id/guide_b"
+        app:layout_constraintBottom_toBottomOf="@id/guide_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_c"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent=".750"
+        android:orientation="horizontal"/>
+
+    <br.com.devquiz.buttons.QuestionResponseButton
+        app:layout_constraintTop_toTopOf="@id/guide_c"
+        app:layout_constraintBottom_toBottomOf="@id/guide_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_d"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintGuide_percent=".875"
+        android:orientation="horizontal"/>
+
+    <br.com.devquiz.buttons.QuestionResponseButton
+        app:layout_constraintTop_toTopOf="@id/guide_d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
