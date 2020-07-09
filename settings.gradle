@@ -1,3 +1,5 @@
+include ':quiz:quizrepository'
+include ':quiz:quizusecase'
 include ':sdk'
 include ':components:buttons'
 rootProject.name='DevQuiz'

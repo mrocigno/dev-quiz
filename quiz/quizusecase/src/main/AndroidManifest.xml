@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.devquiz.quizusecase">
+
+    <application>
+        <provider
+            android:authorities="${applicationId}.quizviewmodel"
+            android:name=".QuizUseCaseInitialization"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+</manifest>

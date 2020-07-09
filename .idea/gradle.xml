@@ -16,7 +16,9 @@
             <option value="$PROJECT_DIR$/components/buttons" />
             <option value="$PROJECT_DIR$/components/layout" />
             <option value="$PROJECT_DIR$/quiz" />
+            <option value="$PROJECT_DIR$/quiz/quizrepository" />
             <option value="$PROJECT_DIR$/quiz/quizui" />
+            <option value="$PROJECT_DIR$/quiz/quizusecase" />
             <option value="$PROJECT_DIR$/quiz/quizviewmodel" />
             <option value="$PROJECT_DIR$/sdk" />
             <option value="$PROJECT_DIR$/test" />
